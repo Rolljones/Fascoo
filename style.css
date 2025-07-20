@@ -154,9 +154,9 @@ nav .burger > div {
     left: 0;
     width: 80%;
     height: 100vh;
-    background: var(--color-btn);
+    background: var(--color-dark);
     text-align: left;
-    padding: 2rem 0 0 3rem;
+    padding: 4rem 0 0 3rem;
     align-items: unset;
   }
 
@@ -181,11 +181,16 @@ nav .burger > div {
 
   nav .nav-links > .sign {
     padding: 0;
-    background-color: none;
+    background: none;
     color: var(--color-main);
     border: none;
     width: fit-content;
     font-size: var(--sec-text);
+    box-shadow: none;
+  }
+
+  nav .nav-links > .sign:hover {
+    display: none;
   }
 
   nav .nav-links > .log {
@@ -235,9 +240,9 @@ nav .burger > div {
     left: 0;
     width: 80%;
     height: 100vh;
-    background: var(--color-btn);
+    background: var(--color-dark);
     text-align: left;
-    padding: 2rem 0 0 3rem;
+    padding: 4rem 0 0 3rem;
     align-items: unset;
   }
 
@@ -262,11 +267,16 @@ nav .burger > div {
 
   nav .nav-links > .sign {
     padding: 0;
-    background-color: none;
+    background: none;
     color: var(--color-main);
     border: none;
     width: fit-content;
     font-size: var(--sec-text);
+    box-shadow: none;
+  }
+
+  nav .nav-links > .sign:hover {
+    display: none;
   }
 
   nav .nav-links > .log {
