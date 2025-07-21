@@ -187,6 +187,7 @@ nav .burger > div {
     width: fit-content;
     font-size: var(--sec-text);
     box-shadow: none;
+    font-weight: 500;
   }
 
   nav .nav-links > .sign:hover {
@@ -201,6 +202,7 @@ nav .burger > div {
     width: fit-content;
     font-size: var(--sec-text);
     margin-left: 0;
+    font-weight: 500;
   }
 
   nav .burger {
@@ -273,6 +275,7 @@ nav .burger > div {
     width: fit-content;
     font-size: var(--sec-text);
     box-shadow: none;
+    font-weight: 500;
   }
 
   nav .nav-links > .sign:hover {
@@ -287,6 +290,7 @@ nav .burger > div {
     width: fit-content;
     font-size: var(--sec-text);
     margin-left: 0;
+    font-weight: 500;
   }
 
   nav .burger {
