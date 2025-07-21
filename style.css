@@ -189,8 +189,10 @@ main #front {
   gap: 1rem;
 }
 
-.grid-front .grid > img {
+.grid-front .box1 > img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .grid-front .box3 > img {
@@ -404,7 +406,7 @@ main #front {
   }
 
   .grid-front > .box1 img {
-    width: 40%;
+    width: 100%;
   }
 
   .grid-front > .box3 img {
@@ -570,10 +572,11 @@ main #front {
 
   .grid-front .box3 {
     grid-row: unset;
+    display: none;
   }
 
   .grid-front .box4 {
-    grid-row-start: 2;
+    grid-row-start: 1;
   }
 
   .grid-front .box5 {
@@ -581,7 +584,7 @@ main #front {
   }
 
   .grid-front > .box1 img {
-    width: 40%;
+    width: 100%;
   }
 
   .grid-front > .box3 img {
