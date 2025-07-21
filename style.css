@@ -7,6 +7,7 @@
   --color-main: #ffffff;
   --color-text: #8A8A8A;
   --color-btn: #000000;
+  --color-back: #E0E0E0;
 
   /* text sizes */
   --pri-text: 1rem;
@@ -117,7 +118,7 @@ nav .nav-links > .log {
   width: fit-content;
   font-size: var(--pri-text);
   background: transparent;
-  margin-left: 6rem;
+  margin-left: 9rem;
   cursor: pointer;
 }
 
@@ -134,6 +135,114 @@ nav .burger > div {
   margin: 5px;
   transition: all 0.3s ease;
 }
+
+main #front {
+  padding: 15rem 5rem 10rem;
+}
+
+#front .grid-front {
+  display: grid;
+  gap:2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 9rem 20rem 9rem;
+}
+
+
+.grid-front .box1 {
+  grid-row: span 3;
+  background-color: var(--color-back);
+  display: flex;
+  align-items: end;
+  border-radius: 0.5rem;
+}
+
+.grid-front .box2 {
+  background-color: var(--color-back);
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.grid-front .box3 {
+  grid-row: span 3;
+  background-color: var(--color-back);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.grid-front .box5 {
+  background-color: #ed5151;
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.grid-front .box4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1rem
+}
+
+.grid-front .grid > img {
+  width: 100%;
+}
+
+.grid-front .box3 > img {
+  width: 70%;
+}
+
+.box4 h1 {
+  font-weight: 500;
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+}
+
+.box4 h2 {
+  font-weight: 500;
+  font-size: 7rem;
+  text-transform: uppercase;
+  color: white; /* Inner part of the text */
+  text-shadow: 
+    -1px -1px 0 #000000, 
+    1px -1px 0 #000000, 
+    -1px 1px 0 #000000, 
+    1px 1px 0 #000000; 
+  margin: 0;
+  line-height: 0.8;
+}
+
+.box4 p {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+.box4 button {
+  padding: 0.7rem 2.5rem;
+  background-color: var(--color-btn);
+  color: var(--color-main);
+  width: fit-content;
+  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.6);
+  transition: all 0.5s ease;
+  font-size: var(--pri-text);
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+}
+
+.box4 button:hover {
+  box-shadow: none;
+}
+
 
 /* tablet breakpoint */
 
@@ -221,6 +330,51 @@ nav .burger > div {
   nav .burger.toggle > .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
+
+  main #front {
+    padding: 11rem 2rem 7rem;
+  }
+
+  #front .grid-front {
+    display: grid;
+    gap:3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .grid-front .box1 {
+    grid-row: unset;
+    align-items: center;
+    justify-content: center;
+  } 
+  
+  .grid-front .box2 {
+    display: none;
+  }
+
+  .grid-front .box3 {
+    grid-row: unset;
+  }
+
+  .grid-front .box4 {
+    grid-row-start: 2;
+  }
+  
+  .grid-front .box5 {
+    display: none;
+  }
+
+  .grid-front > .box1 img {
+     width: 40%
+  }
+
+  .grid-front > .box3 img {
+    width: 25%
+ }
+  
+  .box4 button {
+    padding: 1rem 2.5rem;
+  }
 }
 
 /* Phone breakpoint */
@@ -238,7 +392,7 @@ nav .burger > div {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     width: 80%;
     height: 100vh;
@@ -308,5 +462,50 @@ nav .burger > div {
 
   nav .burger.toggle > .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  main #front {
+    padding: 11rem 2rem 7rem;
+  }
+
+  #front .grid-front {
+    display: grid;
+    gap:3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .grid-front .box1 {
+    grid-row: unset;
+    align-items: center;
+    justify-content: center;
+  } 
+  
+  .grid-front .box2 {
+    display: none;
+  }
+
+  .grid-front .box3 {
+    grid-row: unset;
+  }
+
+  .grid-front .box4 {
+    grid-row-start: 2;
+  }
+  
+  .grid-front .box5 {
+    display: none;
+  }
+
+  .grid-front > .box1 img {
+     width: 40%
+  }
+
+  .grid-front > .box3 img {
+    width: 25%
+ }
+  
+  .box4 button {
+    padding: 1rem 2.5rem;
   }
 }
