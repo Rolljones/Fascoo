@@ -5,9 +5,9 @@
 
   --color-dark: #484848;
   --color-main: #ffffff;
-  --color-text: #8A8A8A;
+  --color-text: #8a8a8a;
   --color-btn: #000000;
-  --color-back: #E0E0E0;
+  --color-back: #e0e0e0;
 
   /* text sizes */
   --pri-text: 1rem;
@@ -142,11 +142,10 @@ main #front {
 
 #front .grid-front {
   display: grid;
-  gap:2rem;
+  gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 9rem 20rem 9rem;
 }
-
 
 .grid-front .box1 {
   grid-row: span 3;
@@ -187,7 +186,7 @@ main #front {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:1rem
+  gap: 1rem;
 }
 
 .grid-front .grid > img {
@@ -211,11 +210,8 @@ main #front {
   font-size: 7rem;
   text-transform: uppercase;
   color: white; /* Inner part of the text */
-  text-shadow: 
-    -1px -1px 0 #000000, 
-    1px -1px 0 #000000, 
-    -1px 1px 0 #000000, 
-    1px 1px 0 #000000; 
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
+    1px 1px 0 #000000;
   margin: 0;
   line-height: 0.8;
 }
@@ -243,7 +239,6 @@ main #front {
   box-shadow: none;
 }
 
-
 /* tablet breakpoint */
 
 @media (min-width: 577px) and (max-width: 820px) {
@@ -256,21 +251,29 @@ main #front {
   }
 
   nav .nav-links {
-    display: none;
     flex-direction: column;
     position: absolute;
-    top: 0px;
+    top: 6rem;
     left: 0;
-    width: 80%;
+    width: 100%;
     height: 100vh;
     background: var(--color-dark);
     text-align: left;
     padding: 4rem 0 0 3rem;
     align-items: unset;
+
+    /* Add animation props */
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.4s ease, opacity 0.2s ease;
+    z-index: 99;
   }
 
   nav .nav-links.active {
-    display: flex;
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
   nav .nav-links > li a:active::after {
@@ -297,10 +300,26 @@ main #front {
     font-size: var(--sec-text);
     box-shadow: none;
     font-weight: 500;
+    position: relative;
+    padding-bottom: 7px;
   }
 
-  nav .nav-links > .sign:hover {
-    display: none;
+  nav .nav-links > .sign::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-main);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav .nav-links > .sign:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
   }
 
   nav .nav-links > .log {
@@ -312,6 +331,26 @@ main #front {
     font-size: var(--sec-text);
     margin-left: 0;
     font-weight: 500;
+     position: relative;
+    padding-bottom: 7px;
+  }
+
+  nav .nav-links > .log::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-main);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav .nav-links > .log:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
   }
 
   nav .burger {
@@ -337,7 +376,7 @@ main #front {
 
   #front .grid-front {
     display: grid;
-    gap:3rem;
+    gap: 3rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
   }
@@ -346,8 +385,8 @@ main #front {
     grid-row: unset;
     align-items: center;
     justify-content: center;
-  } 
-  
+  }
+
   .grid-front .box2 {
     display: none;
   }
@@ -359,19 +398,19 @@ main #front {
   .grid-front .box4 {
     grid-row-start: 2;
   }
-  
+
   .grid-front .box5 {
     display: none;
   }
 
   .grid-front > .box1 img {
-     width: 40%
+    width: 40%;
   }
 
   .grid-front > .box3 img {
-    width: 25%
- }
-  
+    width: 25%;
+  }
+
   .box4 button {
     padding: 1rem 2.5rem;
   }
@@ -389,21 +428,29 @@ main #front {
   }
 
   nav .nav-links {
-    display: none;
     flex-direction: column;
     position: absolute;
-    top: 0;
+    top: 5rem;
     left: 0;
-    width: 80%;
+    width: 100%;
     height: 100vh;
     background: var(--color-dark);
     text-align: left;
     padding: 4rem 0 0 3rem;
     align-items: unset;
+
+    /* Add animation props */
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.4s ease, opacity 0.2s ease;
+    z-index: 99;
   }
 
   nav .nav-links.active {
-    display: flex;
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
   nav .nav-links > li a:active::after {
@@ -430,10 +477,26 @@ main #front {
     font-size: var(--sec-text);
     box-shadow: none;
     font-weight: 500;
+    position: relative;
+    padding-bottom: 7px;
   }
 
-  nav .nav-links > .sign:hover {
-    display: none;
+  nav .nav-links > .sign::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-main);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav .nav-links > .sign:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
   }
 
   nav .nav-links > .log {
@@ -445,6 +508,26 @@ main #front {
     font-size: var(--sec-text);
     margin-left: 0;
     font-weight: 500;
+     position: relative;
+    padding-bottom: 7px;
+  }
+
+  nav .nav-links > .log::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-main);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav .nav-links > .log:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
   }
 
   nav .burger {
@@ -470,7 +553,7 @@ main #front {
 
   #front .grid-front {
     display: grid;
-    gap:3rem;
+    gap: 3rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
   }
@@ -479,8 +562,8 @@ main #front {
     grid-row: unset;
     align-items: center;
     justify-content: center;
-  } 
-  
+  }
+
   .grid-front .box2 {
     display: none;
   }
@@ -492,19 +575,19 @@ main #front {
   .grid-front .box4 {
     grid-row-start: 2;
   }
-  
+
   .grid-front .box5 {
     display: none;
   }
 
   .grid-front > .box1 img {
-     width: 40%
+    width: 40%;
   }
 
   .grid-front > .box3 img {
-    width: 25%
- }
-  
+    width: 25%;
+  }
+
   .box4 button {
     padding: 1rem 2.5rem;
   }
