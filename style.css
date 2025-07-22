@@ -442,15 +442,13 @@ main #front {
 
   #front .grid-front {
     display: grid;
-    gap: 3rem;
+    gap: 3rem 0 0;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
   }
 
   .grid-front .box1 {
-    grid-row: unset;
-    align-items: center;
-    justify-content: center;
+    display: none;
   }
 
   .grid-front .box2 {
@@ -458,20 +456,11 @@ main #front {
   }
 
   .grid-front .box3 {
-    grid-row: unset;
     display: none;
-  }
-
-  .grid-front .box4 {
-    grid-row-start: 1;
   }
 
   .grid-front .box5 {
     display: none;
-  }
-
-  .grid-front > .box1 img {
-    width: 100%;
   }
 
   .box4 button {
@@ -621,19 +610,13 @@ main #front {
 
   #front .grid-front {
     display: grid;
-    gap: 3rem;
+    gap: 3rem 0 0 ;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
   }
 
   .grid-front .box1 {
-    grid-row: unset;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .grid-front > .box1 img {
-    width: 100%;
+    display: none;
   }
 
   .grid-front .box2 {
@@ -641,12 +624,7 @@ main #front {
   }
 
   .grid-front .box3 {
-    grid-row: unset;
     display: none;
-  }
-
-  .grid-front .box4 {
-    grid-row-start: 1;
   }
 
   .grid-front .box5 {
