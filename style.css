@@ -590,14 +590,17 @@ main #front {
 
   .content p {
     text-align: center;
+    font-size: 1.3rem;
   }
 
   .content h1 {
     text-align: center;
+    font-size: var(--sec-head);
   }
 
   .content span {
     text-align: center;
+    font-size: 1.9rem;
   }
 }
 
@@ -786,15 +789,18 @@ main #front {
     align-items: center;
   }
 
-  .content p {
+ .content p {
     text-align: center;
+    font-size: 1.3rem;
   }
 
   .content h1 {
     text-align: center;
+    font-size: var(--sec-head);
   }
 
   .content span {
     text-align: center;
+    font-size: 1.9rem;
   }
 }

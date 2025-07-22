@@ -53,3 +53,40 @@ const faders = document.querySelectorAll('.fade-in');
     const newIndex = (currentIndex - 1 + images.length) % images.length;
     changeImage(newIndex);
   });
+
+
+
+
+  let second = 0;
+let minute = 0;
+let hour = 0;
+let day = 0;
+
+function updateTime() {
+  second++;
+
+  if (second === 60) {
+    second = 0;
+    minute++;
+  }
+
+  if (minute === 60) {
+    minute = 0;
+    hour++;
+  }
+
+  if (hour === 24) {
+    hour = 0;
+    day++;
+  }
+
+  // Update DOM
+  document.getElementById("second").textContent = String(second).padStart(2, "0");
+  document.getElementById("minute").textContent = String(minute).padStart(2, "0");
+  document.getElementById("hour").textContent = String(hour).padStart(2, "0");
+  document.getElementById("day").textContent = String(day).padStart(2, "0");
+}
+
+// Run every second
+setInterval(updateTime, 1000);
+
