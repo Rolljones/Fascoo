@@ -139,7 +139,7 @@ nav .burger > div {
 main #front {
   padding: 12rem 5rem 6rem;
   display: flex;
-  gap:3rem;
+  gap: 3rem;
   flex-direction: column;
 }
 
@@ -153,7 +153,6 @@ main #front {
 .grid-front .box1 {
   grid-row: span 3;
 }
-
 
 .grid-front .box3 {
   grid-row: span 3;
@@ -180,14 +179,14 @@ main #front {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position:center top ;
+  object-position: center top;
 }
 
 .grid-front .box5 > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position:center top ;
+  object-position: center top;
 }
 
 .box4 h1 {
@@ -235,13 +234,13 @@ main #front {
 #front .cart-flex {
   display: flex;
   align-items: center;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .cart-flex i {
-  color:var(--color-btn);
-  border:1.5px solid var(--color-btn);
-  padding:0.7rem;
+  color: var(--color-btn);
+  border: 1.5px solid var(--color-btn);
+  padding: 0.7rem;
   font-size: 3rem;
   border-radius: 50%;
   transition: all 0.5s ease;
@@ -249,57 +248,61 @@ main #front {
 
 .cart-flex i:hover {
   background-color: var(--color-btn);
-  color:var(--color-main);
+  color: var(--color-main);
   border: none;
 }
 
 #front .scroll {
-    position: relative;
-    overflow:hidden;
-    width: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 #front .scroll > .logo-flex {
-    width:max-content;
-    display: flex;
-    gap:2rem;
-    animation: loop 07s linear infinite;
-    padding:40px 0;
+  width: max-content;
+  display: flex;
+  gap: 2rem;
+  animation: loop 07s linear infinite;
 }
 
 .scroll .logo-flex > .logo-box {
-    display: flex;
-    align-items: center;
-    gap:0 0.2rem;
-    padding:0.7rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0 0.2rem;
+  padding: 0.7rem 1rem;
 }
 
 .logo-box img {
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 
 .scroll .logo-flex > .logo-box-self {
-    transform: translateY(15px);
+  transform: translateY(15px);
 }
 
 .scroll .fade {
-    position: absolute;
-    background: linear-gradient(90deg, #FFF, transparent 30%, transparent 70%, #FFF);
-    inset:0;
-    pointer-events: none;
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    #fff,
+    transparent 30%,
+    transparent 70%,
+    #fff
+  );
+  inset: 0;
+  pointer-events: none;
 }
 
 @keyframes loop {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(-50%);
-    }
+  100% {
+    transform: translateX(-50%);
+  }
 }
-
 
 /* tablet breakpoint */
 
@@ -393,7 +396,7 @@ main #front {
     font-size: var(--sec-text);
     margin-left: 0;
     font-weight: 500;
-     position: relative;
+    position: relative;
     padding-bottom: 7px;
   }
 
@@ -434,6 +437,7 @@ main #front {
 
   main #front {
     padding: 11rem 2rem 7rem;
+    gap:2rem;
   }
 
   #front .grid-front {
@@ -472,6 +476,10 @@ main #front {
 
   .box4 button {
     padding: 1rem 2.5rem;
+  }
+
+  #front .cart-flex {
+    display: none;
   }
 }
 
@@ -567,7 +575,7 @@ main #front {
     font-size: var(--sec-text);
     margin-left: 0;
     font-weight: 500;
-     position: relative;
+    position: relative;
     padding-bottom: 7px;
   }
 
@@ -608,6 +616,7 @@ main #front {
 
   main #front {
     padding: 11rem 2rem 7rem;
+    gap:2rem;
   }
 
   #front .grid-front {
@@ -623,7 +632,7 @@ main #front {
     justify-content: center;
   }
 
-   .grid-front > .box1 img {
+  .grid-front > .box1 img {
     width: 100%;
   }
 
@@ -647,4 +656,13 @@ main #front {
   .box4 button {
     padding: 1rem 2.5rem;
   }
+
+  #front .cart-flex {
+    display: none;
+  }
+
+  .logo-box img {
+  width: 11rem;
+  height: 100%;
+}
 }
