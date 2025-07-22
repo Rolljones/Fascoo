@@ -138,6 +138,9 @@ nav .burger > div {
 
 main #front {
   padding: 12rem 5rem 6rem;
+  display: flex;
+  gap:3rem;
+  flex-direction: column;
 }
 
 #front .grid-front {
@@ -228,6 +231,75 @@ main #front {
 .box4 button:hover {
   box-shadow: none;
 }
+
+#front .cart-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.cart-flex i {
+  color:var(--color-btn);
+  border:1.5px solid var(--color-btn);
+  padding:0.7rem;
+  font-size: 3rem;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.cart-flex i:hover {
+  background-color: var(--color-btn);
+  color:var(--color-main);
+  border: none;
+}
+
+#front .scroll {
+    position: relative;
+    overflow:hidden;
+    width: 100%;
+}
+
+#front .scroll > .logo-flex {
+    width:max-content;
+    display: flex;
+    gap:2rem;
+    animation: loop 07s linear infinite;
+    padding:40px 0;
+}
+
+.scroll .logo-flex > .logo-box {
+    display: flex;
+    align-items: center;
+    gap:0 0.2rem;
+    padding:0.7rem 1rem;
+}
+
+.logo-box img {
+  width: 100%;
+  height:100%;
+}
+
+.scroll .logo-flex > .logo-box-self {
+    transform: translateY(15px);
+}
+
+.scroll .fade {
+    position: absolute;
+    background: linear-gradient(90deg, #FFF, transparent 30%, transparent 70%, #FFF);
+    inset:0;
+    pointer-events: none;
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 
 /* tablet breakpoint */
 
