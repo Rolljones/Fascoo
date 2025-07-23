@@ -384,6 +384,7 @@ main #front {
   font-size: var(--pri-text);
   cursor: pointer;
   border: none;
+  text-transform: uppercase;
 }
 
 .content button:hover {
@@ -602,6 +603,10 @@ main #front {
     text-align: center;
     font-size: 1.9rem;
   }
+
+  .content button {
+     padding: 1rem 2.5rem;
+  }
 }
 
 /* Phone breakpoint */
@@ -802,5 +807,9 @@ main #front {
   .content span {
     text-align: center;
     font-size: 1.9rem;
+  }
+
+  .content button {
+     padding: 1rem 2.5rem;
   }
 }
