@@ -238,17 +238,17 @@ main #front {
 
 #front .cart-flex {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .cart-flex i {
-  color: var(--color-btn);
-  border: 1.5px solid var(--color-btn);
+  background-color: var(--color-main);
+  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.3);
   padding: 0.7rem;
   font-size: 3rem;
   border-radius: 50%;
   transition: all 0.5s ease;
+  color: #000;
 }
 
 .cart-flex i:hover {
@@ -410,6 +410,57 @@ main #front {
   border-radius: 0.7rem;
 }
 
+main #arrival {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem;
+}
+
+#arrival .arrive-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.arrive-head h2 {
+  font-family: "Volkhov", serif;
+  font-size: var(--pri-head);
+  text-transform: capitalize;
+}
+
+.arrive-head p {
+  font-size: var(--pri-text);
+  color: var(--color-text);
+  width: 40rem;
+  text-align: center;
+}
+
+#arrival .arrive-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.arrive-flex button {
+  padding: 0.7rem 2.5rem;
+  font-size: 0.9rem;
+  border: none;
+  transition: all 0.5s ease;
+  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.6);
+  background-color: var(--color-btn);
+  color: var(--color-main);
+  cursor: pointer;
+}
+
+.arrive-flex button:hover {
+  background-color: #eeebeb;
+  color: var(--color-text);
+  box-shadow: none;
+}
+
 /* tablet breakpoint */
 
 @media (min-width: 577px) and (max-width: 820px) {
@@ -566,7 +617,7 @@ main #front {
   }
 
   #front .cart-flex {
-    display: none;
+    justify-content: center;
   }
 
   .image-slider-section {
@@ -605,7 +656,31 @@ main #front {
   }
 
   .content button {
-     padding: 1rem 2.5rem;
+    padding: 1rem 2.5rem;
+  }
+
+  main #arrival {
+    padding: 3rem 2rem;
+  }
+
+  .arrive-head h2 {
+    font-size: var(--sec-head);
+  }
+
+  .arrive-head p {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  #arrival .arrive-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .arrive-flex button {
+    padding: 1rem 2.5rem;
+    font-size: var(--pri-text);
   }
 }
 
@@ -765,7 +840,7 @@ main #front {
   }
 
   #front .cart-flex {
-    display: none;
+    justify-content: center;
   }
 
   .logo-box img {
@@ -794,7 +869,7 @@ main #front {
     align-items: center;
   }
 
- .content p {
+  .content p {
     text-align: center;
     font-size: 1.3rem;
   }
@@ -810,6 +885,30 @@ main #front {
   }
 
   .content button {
-     padding: 1rem 2.5rem;
+    padding: 1rem 2.5rem;
+  }
+
+  main #arrival {
+    padding: 3rem 2rem;
+  }
+
+  .arrive-head h2 {
+    font-size: var(--sec-head);
+  }
+
+  .arrive-head p {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  #arrival .arrive-flex {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .arrive-flex button {
+    padding: 1rem 2.5rem;
+    font-size: var(--pri-text);
   }
 }
