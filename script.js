@@ -90,3 +90,19 @@ function updateTime() {
 // Run every second
 setInterval(updateTime, 1000);
 
+
+
+const buttons = document.querySelectorAll('.tab-btn');
+const contents = document.querySelectorAll('.tab-content');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    contents.forEach(content => content.classList.remove('active'));
+    const target = button.getAttribute('data-target');
+    document.getElementById(target).classList.add('active');
+  });
+});
+
+// Show the first content by default
+document.getElementById('content1').classList.add('active');
+
