@@ -595,7 +595,6 @@ main #arrival {
 main #peaky-flex {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0 5rem;
 }
 
 #peaky-flex .first-box > img {
@@ -660,7 +659,7 @@ main #information {
 
 #information .info {
   display: flex;
-  gap:0.7rem;
+  gap: 0.7rem;
   align-items: center;
 }
 
@@ -681,7 +680,48 @@ div .text-info {
 
 .text-info p {
   font-size: 0.8rem;
-  color:var(--color-text);
+  color: var(--color-text);
+}
+
+main #social {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  background-color: #fafafa;
+}
+
+#social .social-head {
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-head h2 {
+  font-family: "Volkhov", serif;
+  font-size: var(--pri-head);
+  text-transform: capitalize;
+}
+
+.social-head p {
+  font-size: var(--pri-text);
+  color: var(--color-text);
+  text-align: center;
+  width: 40rem;
+}
+
+#social .image-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.image-flex img {
+  width: 100%;
+  object-fit: cover;
 }
 
 /* tablet breakpoint */
@@ -936,30 +976,72 @@ div .text-info {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    padding: 0 2rem;
   }
 
-   main #information {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 3rem 2rem;
-  gap:4rem;
-}
+  #peaky-flex .first-box {
+    display: none;
+  }
 
-#information .info {
-  display: flex;
-  gap:0.7rem;
-  flex-direction: column;
-}
+  #peaky-flex .second-box {
+    border: none;
+  }
 
-#information .text-info > h4 {
-  text-align: center;
-}
+  main #information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 2rem;
+    gap: 4rem;
+  }
 
-#information .text-info > p {
-  text-align: center;
-}
+  #information .info {
+    display: flex;
+    gap: 0.7rem;
+    flex-direction: column;
+  }
 
+  #information .text-info > h4 {
+    text-align: center;
+  }
+
+  #information .text-info > p {
+    text-align: center;
+  }
+
+  main #social {
+    padding: 3rem 0;
+  }
+
+  #social .social-head {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .social-head h2 {
+    font-size: var(--sec-head);
+  }
+
+  .social-head p {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  #social .image-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+  }
+
+  .image-flex img:nth-child(6) {
+    display: none;
+  }
+
+  .image-flex img:nth-child(7) {
+    display: none;
+  }
 }
 
 /* Phone breakpoint */
@@ -1220,27 +1302,71 @@ div .text-info {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    padding: 0 2rem;
+  }
+
+  #peaky-flex .first-box {
+    display: none;
+  }
+
+  #peaky-flex .second-box {
+    border: none;
   }
 
   main #information {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 3rem 2rem;
-  gap:4rem;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 2rem;
+    gap: 4rem;
+  }
 
-#information .info {
-  display: flex;
-  gap:0.7rem;
-  flex-direction: column;
-}
+  #information .info {
+    display: flex;
+    gap: 0.7rem;
+    flex-direction: column;
+  }
 
-#information .text-info > h4 {
-  text-align: center;
-}
+  #information .text-info > h4 {
+    text-align: center;
+  }
 
-#information .text-info > p {
-  text-align: center;
-}
+  #information .text-info > p {
+    text-align: center;
+  }
+
+  main #social {
+    padding: 3rem 0;
+  }
+
+  #social .social-head {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .social-head h2 {
+    font-size: var(--sec-head);
+    text-align: center;
+  }
+
+  .social-head p {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  #social .image-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+  }
+
+  .image-flex img:nth-child(6) {
+    display: none;
+  }
+
+  .image-flex img:nth-child(7) {
+    display: none;
+  }
 }
