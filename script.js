@@ -27,7 +27,7 @@ const faders = document.querySelectorAll('.fade-in');
 
 
 
-  const images = ["./main/image1.webp", "./main/image2.webp",  "./main/image3.webp", "./main/image4.webp",]; // Replace with your actual image paths
+  const images = ["./main/image4.webp", "./main/image2.webp",  "./main/image3.webp", "./main/image1.webp",]; // Replace with your actual image paths
   let currentIndex = 0;
 
   const sliderImage = document.getElementById("sliderImage");
