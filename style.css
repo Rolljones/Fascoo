@@ -26,6 +26,7 @@ html {
   src: url(./main/digital-7.ttf);
 }
 
+
 body {
   background-color: var(--color-main);
   scroll-behavior: smooth;
@@ -99,11 +100,10 @@ nav .nav-links > li a:hover::after {
 }
 
 nav .nav-links > .sign {
-  padding: 0.7rem 2.5rem;
+  padding: 0.7rem 3rem;
   background-color: var(--color-btn);
   color: var(--color-main);
-  width: fit-content;
-  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.6);
+  width: fit-content; 
   transition: all 0.5s ease;
   font-size: var(--pri-text);
   cursor: pointer;
@@ -111,7 +111,10 @@ nav .nav-links > .sign {
 }
 
 nav .nav-links > .sign:hover {
+ background-color: #eeebeb;
+  color: var(--color-text);
   box-shadow: none;
+
 }
 
 nav .nav-links > .log {
@@ -215,11 +218,10 @@ main #front {
 }
 
 .box4 button {
-  padding: 0.7rem 2.5rem;
+  padding: 0.7rem 3rem;
   background-color: var(--color-btn);
   color: var(--color-main);
   width: fit-content;
-  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.6);
   transition: all 0.5s ease;
   font-size: var(--pri-text);
   cursor: pointer;
@@ -228,6 +230,8 @@ main #front {
 }
 
 .box4 button:hover {
+  background-color: #eeebeb;
+  color: var(--color-text);
   box-shadow: none;
 }
 
@@ -356,11 +360,10 @@ main #front {
 }
 
 .content button {
-  padding: 0.7rem 2.5rem;
+  padding: 0.7rem 3rem;
   background-color: var(--color-btn);
   color: var(--color-main);
   width: fit-content;
-  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.6);
   transition: all 0.5s ease;
   font-size: var(--pri-text);
   cursor: pointer;
@@ -369,6 +372,8 @@ main #front {
 }
 
 .content button:hover {
+  background-color: #eeebeb;
+  color: var(--color-text);
   box-shadow: none;
 }
 
@@ -426,11 +431,10 @@ main #arrival {
 }
 
 .arrive-flex .tab-btn {
-  padding: 0.7rem 2.5rem;
+  padding: 0.7rem 3rem;
   font-size: 0.9rem;
   border: none;
   transition: all 0.5s ease;
-  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.6);
   background-color: var(--color-btn);
   color: var(--color-main);
   cursor: pointer;
@@ -533,7 +537,6 @@ main #arrival {
   background-color: var(--color-btn);
   color: var(--color-main);
   width: fit-content;
-  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.6);
   transition: all 0.5s ease;
   font-size: var(--pri-text);
   cursor: pointer;
@@ -542,6 +545,8 @@ main #arrival {
 }
 
 .price button:hover {
+  background-color: #eeebeb;
+  color: var(--color-text);
   box-shadow: none;
 }
 
@@ -554,11 +559,10 @@ main #arrival {
 }
 
 .move-flex .view-btn {
-  padding: 0.7rem 2.5rem;
+  padding: 0.7rem 3rem;
   background-color: var(--color-btn);
   color: var(--color-main);
   width: fit-content;
-  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.6);
   transition: all 0.5s ease;
   font-size: var(--pri-text);
   cursor: pointer;
@@ -567,12 +571,14 @@ main #arrival {
 }
 
 .move-flex .view-btn:hover {
+   background-color: #eeebeb;
+  color: var(--color-text);
   box-shadow: none;
 }
 
 .move-flex i {
   background-color: var(--color-main);
-  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.3);
+  box-shadow: 04px 5px 10px -5px rgb(0, 0, 0, 0.3);
   padding: 0.7rem;
   font-size: 3rem;
   border-radius: 50%;
@@ -630,11 +636,10 @@ main #peaky-flex {
 }
 
 .second-box .buy-btn {
-  padding: 0.7rem 2.5rem;
+  padding: 0.7rem 3rem;
   background-color: var(--color-btn);
   color: var(--color-main);
   width: fit-content;
-  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.6);
   transition: all 0.5s ease;
   font-size: var(--pri-text);
   cursor: pointer;
@@ -643,6 +648,8 @@ main #peaky-flex {
 }
 
 .second-box .buy-btn:hover {
+   background-color: #eeebeb;
+  color: var(--color-text);
   box-shadow: none;
 }
 
@@ -845,11 +852,10 @@ main #newsletter {
 }
 
 .news-box .subscribe {
-  padding: 0.7rem 2.5rem;
+  padding: 0.7rem 3rem;
   background-color: var(--color-btn);
   color: var(--color-main);
   width: fit-content;
-  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.6);
   transition: all 0.5s ease;
   font-size: var(--pri-text);
   cursor: pointer;
@@ -858,6 +864,8 @@ main #newsletter {
 }
 
 .news-box .subscribe:hover {
+   background-color: #eeebeb;
+  color: var(--color-text);
   box-shadow: none;
 }
 
@@ -1059,7 +1067,7 @@ ul li > a:hover::after {
   }
 
   .box4 button {
-    padding: 1rem 2.5rem;
+    padding: 1rem 3rem;
   }
 
   #front .cart-flex {
@@ -1102,7 +1110,7 @@ ul li > a:hover::after {
   }
 
   .content button {
-    padding: 1rem 2.5rem;
+    padding: 1rem 3rem;
   }
 
   main #arrival {
@@ -1125,7 +1133,7 @@ ul li > a:hover::after {
   }
 
   .arrive-flex .tab-btn {
-    padding: 1rem 2.5rem;
+    padding: 1rem 3rem;
     font-size: var(--pri-text);
   }
 
@@ -1143,17 +1151,15 @@ ul li > a:hover::after {
   }
 
   .price button {
-    padding: 1rem 2.5rem;
+    padding: 1rem 3rem;
   }
 
   .move-flex .view-btn {
-    padding: 1rem 2.5rem;
+    padding: 1rem 3rem;
     font-size: var(--pri-text);
   }
 
-  .second-box .buy-btn {
-    padding: 1rem 2.5rem;
-  }
+  
 
   main #peaky-flex {
     display: grid;
@@ -1171,6 +1177,10 @@ ul li > a:hover::after {
 
   .second-box p {
     font-size: 1.3rem;
+  }
+
+  .second-box .buy-btn {
+    padding: 1rem 3rem;
   }
 
   main #information {
@@ -1287,7 +1297,7 @@ ul li > a:hover::after {
   }
 
   .news-box .subscribe {
-    padding: 1rem 2.5rem;
+    padding: 1rem 3rem;
   }
 
   .container footer {
@@ -1454,7 +1464,7 @@ ul li > a:hover::after {
   }
 
   .box4 button {
-    padding: 1rem 2.5rem;
+    padding: 1rem 3rem;
   }
 
   #front .cart-flex {
@@ -1503,7 +1513,7 @@ ul li > a:hover::after {
   }
 
   .content button {
-    padding: 1rem 2.5rem;
+    padding: 1rem 3rem;
   }
 
   main #arrival {
@@ -1526,7 +1536,7 @@ ul li > a:hover::after {
   }
 
   .arrive-flex .tab-btn {
-    padding: 1rem 2.5rem;
+    padding: 1rem 3rem;
     font-size: var(--pri-text);
   }
 
@@ -1544,16 +1554,16 @@ ul li > a:hover::after {
   }
 
   .price button {
-    padding: 1rem 2.5rem;
+    padding: 1rem 3rem;
   }
 
   .move-flex .view-btn {
-    padding: 1rem 2.5rem;
+    padding: 1rem 3rem;
     font-size: var(--pri-text);
   }
 
   .second-box .buy-btn {
-    padding: 1rem 2.5rem;
+    padding: 1rem 3rem;
   }
 
   main #peaky-flex {
@@ -1690,7 +1700,7 @@ ul li > a:hover::after {
   }
 
   .news-box .subscribe {
-    padding: 1rem 2.5rem;
+    padding: 1rem 3rem;
   }
 
   .container footer {
