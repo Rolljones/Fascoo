@@ -606,10 +606,10 @@ main #peaky-flex {
 #peaky-flex .second-box {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   background-color: #dadada;
   border-left: 2px solid #484848;
   padding: 3rem;
+  gap: 1rem;
 }
 
 .second-box p {
@@ -627,10 +627,6 @@ main #peaky-flex {
   font-size: var(--pri-text);
   text-decoration: underline;
   text-transform: uppercase;
-}
-
-.second-box h2 {
-  font-size: 2rem;
 }
 
 .second-box .buy-btn {
@@ -722,6 +718,82 @@ main #social {
 .image-flex img {
   width: 100%;
   object-fit: cover;
+}
+
+main #custom {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: #fafafa;
+}
+
+#custom .custom-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.custom-head h2 {
+  font-family: "Volkhov", serif;
+  font-size: var(--pri-head);
+  text-transform: capitalize;
+}
+
+.custom-head p {
+  font-size: var(--pri-text);
+  color: var(--color-text);
+  text-align: center;
+  width: 40rem;
+}
+
+#custom .customer-flex {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#custom .customer-flex > .customer-box {
+  padding: 2rem;
+  background-color: var(--color-main);
+  transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+
+#custom .customer-flex:hover .customer-box:not(:hover) {
+  transform: scale(0.9rem);
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.customer-flex .customer-box > img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.customer-flex .customer-box > p {
+  color: var(--color-text);
+  font-size: var(--pri-text);
+}
+
+.customer-box .star {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.customer-box .star > i {
+  color: #fca120;
+  font-size: 1rem;
+}
+
+.customer-box h3 {
+  font-weight: 500;
+  font-family: "Volkhov", serif;
 }
 
 /* tablet breakpoint */
@@ -1042,6 +1114,37 @@ main #social {
   .image-flex img:nth-child(7) {
     display: none;
   }
+
+  main #custom {
+    padding: 3rem 2rem;
+  }
+
+  #custom .custom-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .custom-head h2 {
+    font-size: var(--sec-head);
+  }
+
+  .custom-head p {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  #custom .customer-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+#custom .customer-flex > .customer-box:last-child {
+  display: none;
+}
 }
 
 /* Phone breakpoint */
@@ -1358,8 +1461,16 @@ main #social {
 
   #social .image-flex {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
+  }
+
+  .image-flex img:nth-child(4) {
+    display: none;
+  }
+
+  .image-flex img:nth-child(5) {
+    display: none;
   }
 
   .image-flex img:nth-child(6) {
@@ -1369,4 +1480,32 @@ main #social {
   .image-flex img:nth-child(7) {
     display: none;
   }
+
+  main #custom {
+    padding: 3rem 2rem;
+  }
+
+  #custom .custom-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .custom-head h2 {
+    font-size: var(--sec-head);
+    text-align: center;
+  }
+
+  .custom-head p {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+   #custom .customer-flex {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
 }
