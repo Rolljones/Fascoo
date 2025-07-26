@@ -41,6 +41,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+button {
+  border-radius: 0.5rem;
+}
+
 .container {
   display: grid;
   grid-template-columns: 100%;
