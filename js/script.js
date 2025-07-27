@@ -10,6 +10,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+ document.getElementById("signBtn").addEventListener("click", function() {
+        window.location.href = "../pages/sign.html"; 
+    });
+
+document.getElementById("logBtn").addEventListener("click", function() {
+        window.location.href = "../pages/log.html"; 
+    });
+
+
+
+
+
+
 const faders = document.querySelectorAll('.fade-in');
 
   const appearOnScroll = new IntersectionObserver((entries, observer) => {
@@ -23,6 +37,9 @@ const faders = document.querySelectorAll('.fade-in');
   faders.forEach(fader => {
     appearOnScroll.observe(fader);
   });
+
+
+
 
 
 
@@ -53,6 +70,9 @@ const faders = document.querySelectorAll('.fade-in');
     const newIndex = (currentIndex - 1 + images.length) % images.length;
     changeImage(newIndex);
   });
+
+
+
 
 
 
@@ -92,6 +112,11 @@ setInterval(updateTime, 1000);
 
 
 
+
+
+
+
+
 const buttons = document.querySelectorAll('.tab-btn');
 const contents = document.querySelectorAll('.tab-content');
 
@@ -105,4 +130,17 @@ buttons.forEach(button => {
 
 // Show the first content by default
 document.getElementById('content1').classList.add('active');
+
+
+
+
+
+
+
+
+ document.querySelectorAll(".add-to-cart").forEach(button => {
+        button.addEventListener("click", function() {
+            window.location.href = "../pages/sign.html";  // replace with your signup page URL
+        });
+    });
 
