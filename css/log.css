@@ -123,13 +123,14 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:1.5rem;
+  gap: 1.5rem;
+  width: 100%;
 }
 
 .form-flex form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
   width: 100%;
   gap: 1rem;
 }
@@ -152,7 +153,7 @@ form input::placeholder {
   gap:1rem;
 }
 
-.black-flex .account-btn {
+.black-flex .enter-btn {
   padding: 0.5rem 10rem;
   border: none;
   background-color: var(--color-btn);
@@ -161,7 +162,21 @@ form input::placeholder {
   transition: all 0.5s ease;
 }
 
-.black-flex .account-btn:hover {
+.black-flex .enter-btn:hover {
+   background-color: #eeebeb;
+  color: var(--color-text);
+}
+
+.black-flex .register-btn {
+  padding: 0.5rem 10rem;
+  border: none;
+  background-color: #5B86E5;
+  color:var(--color-main);
+  font-size: 0.8rem;
+  transition: all 0.5s ease;
+}
+
+.black-flex .register-btn:hover {
    background-color: #eeebeb;
   color: var(--color-text);
 }
@@ -171,7 +186,7 @@ form input::placeholder {
   font-weight: 400;
   display: flex;
   gap:0.2rem;
-  justify-content: center;
+  justify-content: right;
 }
 
 .black-flex .last > a {
@@ -179,6 +194,7 @@ form input::placeholder {
   text-decoration: none;
   text-transform: capitalize;
 }
+
 
 /* tablet breakpoint */
 
@@ -234,13 +250,11 @@ form input::placeholder {
   }
 
   .form-flex form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-  }
-
-  .black-flex .account-btn {
-  padding: 0.5rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  width: unset;
+  gap: 1rem;
 }
 }
 
@@ -296,15 +310,4 @@ form input::placeholder {
     height: 1.2rem;
     object-fit: contain;
   }
-
-  .form-flex form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto;
-  }
-
-  
-  .black-flex .account-btn {
-  padding: 0.5rem 8rem;
-}
 }
