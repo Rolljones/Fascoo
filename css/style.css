@@ -23,9 +23,8 @@ html {
 
 @font-face {
   font-family: myFont;
-  src: url(./main/digital-7.ttf);
+  src: url(../main/digital-7.ttf);
 }
-
 
 body {
   background-color: var(--color-main);
@@ -107,7 +106,7 @@ nav .nav-links > .sign {
   padding: 0.7rem 3rem;
   background-color: var(--color-btn);
   color: var(--color-main);
-  width: fit-content; 
+  width: fit-content;
   transition: all 0.5s ease;
   font-size: var(--pri-text);
   cursor: pointer;
@@ -115,10 +114,9 @@ nav .nav-links > .sign {
 }
 
 nav .nav-links > .sign:hover {
- background-color: #eeebeb;
+  background-color: #eeebeb;
   color: var(--color-text);
   box-shadow: none;
-
 }
 
 nav .nav-links > .log {
@@ -575,7 +573,7 @@ main #arrival {
 }
 
 .move-flex .view-btn:hover {
-   background-color: #eeebeb;
+  background-color: #eeebeb;
   color: var(--color-text);
   box-shadow: none;
 }
@@ -653,7 +651,7 @@ main #peaky-flex {
 }
 
 .second-box .buy-btn:hover {
-   background-color: #eeebeb;
+  background-color: #eeebeb;
   color: var(--color-text);
   box-shadow: none;
 }
@@ -869,7 +867,7 @@ main #newsletter {
 }
 
 .news-box .subscribe:hover {
-   background-color: #eeebeb;
+  background-color: #eeebeb;
   color: var(--color-text);
   box-shadow: none;
 }
@@ -1163,8 +1161,6 @@ ul li > a:hover::after {
     padding: 1rem 3rem;
     font-size: var(--pri-text);
   }
-
-  
 
   main #peaky-flex {
     display: grid;

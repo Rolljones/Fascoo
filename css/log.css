@@ -262,12 +262,16 @@ form input::placeholder {
     font-size: 0.8rem;
   }
 
+  form input::placeholder {
+    font-size: 1rem;
+  }
+
   .black-flex .enter-btn {
     padding: 0.8rem;
     border: none;
     background-color: var(--color-btn);
     color: var(--color-main);
-    font-size: 0.8rem;
+    font-size: 1rem;
     transition: all 0.5s ease;
   }
 
@@ -276,7 +280,7 @@ form input::placeholder {
     border: none;
     background-color: #5b86e5;
     color: var(--color-main);
-    font-size: 0.8rem;
+    font-size: 1rem;
     transition: all 0.5s ease;
   }
 }
@@ -306,7 +310,7 @@ form input::placeholder {
     justify-content: center;
     align-items: center;
     padding: 4rem;
-    border:none;
+    border: none;
   }
 
   .info .create {
@@ -347,17 +351,21 @@ form input::placeholder {
     font-size: 0.8rem;
   }
 
+  form input::placeholder {
+    font-size: 1rem;
+  }
+
   .black-flex .enter-btn {
     padding: 0.8rem;
     border: none;
     background-color: var(--color-btn);
     color: var(--color-main);
-    font-size: 0.8rem;
+    font-size: 1rem;
     transition: all 0.5s ease;
   }
 
   .black-flex .register-btn {
-    padding: 0.8rem;
+    padding: 1rem;
     border: none;
     background-color: #5b86e5;
     color: var(--color-main);
