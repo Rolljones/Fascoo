@@ -365,11 +365,11 @@ form input::placeholder {
   }
 
   .black-flex .register-btn {
-    padding: 1rem;
+    padding: 0.8rem;
     border: none;
     background-color: #5b86e5;
     color: var(--color-main);
-    font-size: 0.8rem;
+    font-size: 1rem;
     transition: all 0.5s ease;
   }
 }
