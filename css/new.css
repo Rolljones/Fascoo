@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  /* default colors */
+
+  --color-dark: #484848;
+  --color-main: #ffffff;
+  --color-text: #8a8a8a;
+  --color-btn: #000000;
+  --color-back: #e0e0e0;
+
+  /* text sizes */
+  --pri-text: 1rem;
+  --sec-text: 1.4rem;
+  --pri-head: 2.1rem;
+  --sec-head: 2.5rem;
+}
+
+html {
+  color: var(--color-dark);
+  font-size: 1.2vw;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-optical-sizing: auto;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh;
+}
+
+.container .image {
+  overflow: hidden;
+}
+
+.container .image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .info {
+  background-color: var(--color-main);
+  height: 100%;
+  border-left: 4px solid #8a8a8a;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.info h1 {
+  font-family: "Volkhov", serif;
+  font-size: var(--sec-head);
+}
+
+.info .create > h2 {
+  font-size: var(--pri-head);
+  color: var(--color-btn);
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.info .create {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.info .form-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.form-flex form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  width: 100%;
+  gap: 1rem;
+}
+
+form input {
+  padding: 0.8rem;
+  border: none;
+  border-bottom: 2px solid #8a8a8a;
+  outline: none;
+  font-size: 0.8rem;
+}
+
+form input::placeholder {
+  font-size: 0.8rem;
+}
+
+.black-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.black-flex .enter-btn {
+  padding: 0.8rem;
+  border: none;
+  background-color: var(--color-btn);
+  color: var(--color-main);
+  font-size: 0.8rem;
+  transition: all 0.5s ease;
+}
+
+.black-flex .enter-btn:hover {
+  background-color: #eeebeb;
+  color: var(--color-text);
+}
+
+
+/* tablet breakpoint */
+
+@media (min-width: 577px) and (max-width: 820px) {
+  html {
+    font-size: 2vw;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh;
+  }
+
+  .container .image {
+    display: none;
+  }
+
+  .container .info {
+    background-color: var(--color-main);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    border: none;
+  }
+
+  .info .create {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  form input {
+    padding: 0.8rem;
+    border: none;
+    background-color: #e0e0e0;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  form input::placeholder {
+    font-size: 1rem;
+  }
+
+  .black-flex .enter-btn {
+    padding: 0.8rem;
+    border: none;
+    background-color: var(--color-btn);
+    color: var(--color-main);
+    font-size: 1rem;
+    transition: all 0.5s ease;
+  }
+}
+
+
+/* Phone breakpoint */
+
+@media (max-width: 576px) {
+  html {
+    font-size: 3vw;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh;
+  }
+
+  .container .image {
+    display: none;
+  }
+
+  .container .info {
+    background-color: var(--color-main);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    border: none;
+  }
+
+  .info .create {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  form input {
+    padding: 0.8rem;
+    border: none;
+    background-color: #e0e0e0;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  form input::placeholder {
+    font-size: 1rem;
+  }
+
+  .black-flex .enter-btn {
+    padding: 0.8rem;
+    border: none;
+    background-color: var(--color-btn);
+    color: var(--color-main);
+    font-size: 1rem;
+    transition: all 0.5s ease;
+  }
+}
