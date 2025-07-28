@@ -259,7 +259,7 @@ form input::placeholder {
     border: none;
     background-color: #e0e0e0;
     outline: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   form input::placeholder {
@@ -348,7 +348,7 @@ form input::placeholder {
     border: none;
     background-color: #e0e0e0;
     outline: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   form input::placeholder {
